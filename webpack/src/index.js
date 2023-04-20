@@ -1,21 +1,7 @@
 import _ from "lodash";
-import printMe from "./print.js";
+import "./styles.css";
 
-function component() {
-  const element = document.createElement("div");
+// class that is the project and tasks for the todo list can be added to it.
 
-  const btn = document.createElement("button");
-
-  // Lodash, now imported by this script
-  element.innerHTML = _.join(["Hello", "webpack"], " ");
-
-  btn.innerHTML = "Click me and check the console!";
-
-  btn.onclick = printMe;
-
-  element.appendChild(btn);
-
-  return element;
-}
-
-document.body.appendChild(component());
+// use classes or a factory function to create each item that is added to
+// the specific project todo list.
